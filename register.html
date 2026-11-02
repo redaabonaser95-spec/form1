@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>إنشاء حساب</title>
+</head>
+
+<body>
+
+    <header>
+
+        <h1>إنشاء حساب جديد</h1>
+
+        <nav>
+            <a href="login.html">تسجيل الدخول</a>
+            <a href="register.html">إنشاء حساب</a>
+            <a href="contact.html">تواصل معنا</a>
+        </nav>
+
+    </header>
+
+    <hr>
+
+    <main>
+
+        <section>
+
+            <h2>بيانات المستخدم</h2>
+
+            <form action="register.html" method="post">
+
+                <label for="fullname">الاسم الكامل:</label>
+
+                <input type="text"
+                       id="fullname"
+                       name="fullname"
+                       required>
+
+                <br><br>
+
+                <label for="email">البريد الإلكتروني:</label>
+
+                <input type="email"
+                       id="email"
+                       name="email"
+                       required>
+
+                <br><br>
+
+                <p>الجنس:</p>
+
+                <input type="radio"
+                       id="male"
+                       name="gender"
+                       value="male"
+                       required>
+
+                <label for="male">ذكر</label>
+
+                <input type="radio"
+                       id="female"
+                       name="gender"
+                       value="female">
+
+                <label for="female">أنثى</label>
+
+                <br><br>
+
+                <label for="country">الدولة:</label>
+
+                <select id="country" name="country" required>
+
+                    <option value="">اختر الدولة</option>
+                    <option value="Palestine">فلسطين</option>
+                    <option value="Jordan">الأردن</option>
+                    <option value="Egypt">مصر</option>
+                    <option value="Saudi Arabia">السعودية</option>
+                    <option value="Other">دولة أخرى</option>
+
+                </select>
+
+                <br><br>
+
+                <input type="checkbox"
+                       id="terms"
+                       name="terms"
+                       value="accepted"
+                       required>
+
+                <label for="terms">
+                    أوافق على الشروط والأحكام
+                </label>
+
+                <br><br>
+
+                <button type="submit">Register</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>جميع الحقوق محفوظة.</p>
+    </footer>
+
+</body>
+</html>
